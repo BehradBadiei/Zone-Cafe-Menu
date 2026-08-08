@@ -444,7 +444,7 @@ export default function App() {
                         <p className={`mt-1 text-[11px] ${dark ? 'text-zinc-400' : 'text-zinc-500'}`}>{categoryLabel(product.category)}</p>
                         <p className={`mt-1 text-[10.5px] line-clamp-1 ${dark ? 'text-zinc-500' : 'text-zinc-400'}`}>{product.ingredients}</p>
                       </div>
-                      <div className={`shrink-0 rounded-full px-2.5 py-1 text-[11px] font-[800] ${dark ? 'border border-zinc-800 bg-zinc-900 text-white' : 'bg-zinc-900 text-white'}`}>
+                      <div className={`shrink-0 rounded-full px-2.5 py-1 text-[11px] font-[800] ${dark ? 'border border-zinc-800 bg-zinc-900 text-white' : 'border border-zinc-200 bg-zinc-50 text-zinc-700'}`}>
                         {displayPrice(product)}
                       </div>
                     </div>
@@ -496,7 +496,7 @@ export default function App() {
                               <p className={`mt-1 line-clamp-1 text-[11px] leading-4 ${dark ? 'text-zinc-400' : 'text-zinc-500'}`}>{product.desc}</p>
                               <p className={`mt-1 line-clamp-1 text-[10.5px] ${dark ? 'text-zinc-500' : 'text-zinc-400'}`}>{product.ingredients}</p>
                             </div>
-                            <div className={`shrink-0 rounded-full px-2.5 py-1 text-[11px] font-[800] ${dark ? 'border border-zinc-800 bg-zinc-900 text-white' : 'bg-zinc-900 text-white'}`}>
+                            <div className={`shrink-0 rounded-full px-2.5 py-1 text-[11px] font-[800] ${dark ? 'border border-zinc-800 bg-zinc-900 text-white' : 'border border-zinc-200 bg-zinc-50 text-zinc-700'}`}>
                               {displayPrice(product)}
                             </div>
                           </div>
@@ -518,15 +518,29 @@ export default function App() {
           <div className="grid gap-4 text-sm sm:grid-cols-3">
             <div>
               <h4 className="text-[13px] font-[700]">⏰ ساعات کاری</h4>
-              <p className={`mt-1.5 leading-6 ${dark ? 'text-zinc-400' : 'text-zinc-600'}`}>شنبه تا جمعه ۸:۰۰ تا ۲۴:۰۰</p>
+              <p className={`mt-1.5 leading-6 ${dark ? 'text-zinc-400' : 'text-zinc-600'}`}>شنبه تا جمعه ۸:۰۰ تا ۲۳:۰۰</p>
             </div>
             <div>
-              <h4 className="text-[13px] font-[700]">📍 شیراز</h4>
-              <p className={`mt-1.5 leading-6 ${dark ? 'text-zinc-400' : 'text-zinc-600'}`}>بلوار چمران، نبش کوچه ۱۰</p>
+              <h4 className="text-[13px] font-[700]">📍 آدرس</h4>
+              <a
+                href="https://maps.app.goo.gl/G6imMESSD7XWsGaf9"
+                target="_blank"
+                rel="noreferrer"
+                className={`mt-1.5 block leading-6 transition hover:text-[#e30613] ${dark ? 'text-zinc-400' : 'text-zinc-600'}`}
+              >
+                شیراز، ستارخان
+              </a>
             </div>
             <div>
               <h4 className="text-[13px] font-[700]">📱 اینستاگرام</h4>
-              <p className={`mt-1.5 leading-6 ${dark ? 'text-zinc-400' : 'text-zinc-600'}`}>ZONECAFE.SHIRAZ</p>
+              <a
+                href="https://www.instagram.com/zone_cafe_roastery/"
+                target="_blank"
+                rel="noreferrer"
+                className={`mt-1.5 block leading-6 transition hover:text-[#e30613] ${dark ? 'text-zinc-400' : 'text-zinc-600'}`}
+              >
+                @zone_cafe_roastery
+              </a>
             </div>
           </div>
         </section>
