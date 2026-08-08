@@ -1,0 +1,21 @@
+@import "tailwindcss";
+
+.page-container {
+  width: 100%;
+  padding-inline: 16px;
+}
+
+@media (min-width: 640px) {
+  .page-container {
+    padding-inline: 24px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
